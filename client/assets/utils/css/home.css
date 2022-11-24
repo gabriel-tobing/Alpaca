@@ -1,0 +1,42 @@
+@import url(style.css);
+
+/* Features Section */
+
+.features .card {
+    background-color: var(--white-color);
+}
+
+.features .card .image-container {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.7rem;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
+
+
+
+/* Style Order Section */
+
+.order .title {
+    width: 75%;
+}
+
+.order li .desc {
+    position: relative;
+    padding-left: 2.5rem;
+    line-height: 2rem;
+}
+
+.order li .desc::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../images/static/checklist-icon.png);
+}

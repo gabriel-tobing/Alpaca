@@ -1,0 +1,122 @@
+/* Variable CSS */
+
+:root {
+    --primary-color: #E84545;
+    --secondary-color: #00B8A9;
+    --white-color: #F7FBFC;
+    --black-color: #311D3F;
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+}
+
+
+
+/* Reset CSS and Style Base */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white-color);
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Reuseable Class */
+
+.title {
+    color: var(--black-color);
+    font-weight: var(--fw-bold);
+}
+
+.desc {
+    color: var(--black-color);
+    font-weight: var(--fw-regular);
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 0.4rem;
+    color: var(--white-color) !important;
+    font-weight: var(--fw-semibold);
+    text-align: center;
+    user-select: none;
+}
+
+.secondary-button {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: transparent;
+    border: 3px solid var(--primary-color);
+    border-radius: 0.4rem;
+    color: var(--black-color) !important;
+    font-weight: var(--fw-semibold);
+    text-align: center;
+    user-select: none;
+}
+
+.tertier-button {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: transparent;
+    border-radius: 0.4rem;
+    color: var(--black-color) !important;
+    font-weight: var(--fw-semibold);
+    text-align: center;
+    user-select: none;
+}
+
+
+/* Style Navbar Section */
+
+.navbar {
+    background-color: var(--white-color);
+    transition: all 0.3s;
+}
+
+.navbar.scroll {
+    box-shadow: 0 .125rem 0.25rem rgba(49, 29, 63, 0.075);
+}
+
+.navbar .logo {
+    color: var(--black-color) !important;
+    font-weight: var(--fw-bold);
+    user-select: none;
+}
+
+.navbar .nav-link {
+    color: var(--black-color) !important;
+    font-weight: var(--fw-semibold);
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.navbar .nav-link.active {
+    color: var(--primary-color) !important;
+    font-weight: var(--fw-bold);
+}
+
+
+
+/* Style Footer Section */
