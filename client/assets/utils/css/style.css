@@ -84,6 +84,35 @@ a {
     user-select: none;
 }
 
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.4rem 0.8rem;
+    font-weight: var(--fw-regular);
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border: 3px solid var(--black-color);
+    border-radius: 0.4rem;
+}
+
+.form-control:focus {
+    color: var(--black-color);
+    background-color:var(--white-color);
+    border-color: var(--black-color);
+    box-shadow: none;
+}
+
+.form-check-input:focus{
+    border-color: var(--white-color);
+    outline:none;
+    box-shadow:none
+}
+
+.form-check-input:checked{
+    background-color:var(--primary-color);
+    border-color:var(--secondary-color)
+}
+
 
 /* Style Navbar Section */
 
@@ -129,13 +158,27 @@ a {
     color: var(--white-color);
 }
 
+.footer .desc {
+    color: var(--white-color);
+}
+
+.footer .notification {
+    color: var(--white-color);
+    font-size: 0.9rem;
+    font-weight: var(--fw-regular);
+}
+
 .footer a {
     display: inline-block;
     margin: 0.3rem 0;
-    padding: 0.2rem 0.4rem;
+    padding: 0.2rem 0.4rem 0.2rem 0;
     color: var(--white-color);
 }
 
 .footer a:hover {
     color: var(--secondary-color);
+}
+
+.footer form .primary-button {
+    width: 100%;
 }
