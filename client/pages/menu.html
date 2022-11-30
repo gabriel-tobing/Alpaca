@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- BoxIcons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/utils/css/style.css">
     <link rel="stylesheet" href="../assets/utils/css/menu.css">
@@ -59,14 +62,388 @@
     <!-- Jumbotron Section -->
 
     <div class="jumbotron container-fluid py-5">
-        <div class="row pt-4">
-            <div class="col-7">
-                <form action="" method="" class="d-flex justify-content-center">
-                    <div class="d-flex justify-content-end pt-5 align-items-center gap-3">
+        <div class="row pt-5">
+            <div class="col-12 mb-3">
+                <h3 class="title text-center">Temukan Makanan Anda</h3>
+            </div>
+            <div class="col-7 m-auto">
+                <form action="" method="">
+                    <div class="d-flex align-items-center gap-3">
                         <input type="search" class="form-control" id="" autocomplete="off">
-                        <button type="submit" class="primary-button">Submit</button>
+                        
+                        <button type="submit" class="primary-button">
+                            <i class="search-icon bx bx-search"></i>
+                        </button>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Sort Section -->
+
+    <div class="container-fluid py-3">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-end align-items-center gap-2">
+                    <h6 class="title mb-0">Sort by</h6>
+    
+                    <form action="" method="">
+                        <select class="form-select">
+                            <option value="Populer" selected>Populer</option>
+                            <option value="Paling Murah">Paling Murah</option>
+                            <option value="Paling Mahal">Paling Mahal</option>
+                            <option value="Rating">Rating</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Food List Section -->
+
+    <div class="food-list container-fluid py-4">
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4">
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://cdn0-production-images-kly.akamaized.net/OrdT-pJk5REpdRONTOKTgn0xOz4=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1697136/original/002803100_1504182506-amazingraze.s3.amazonaws.com1.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Rendang</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://img-global.cpcdn.com/recipes/201010589ad9817e/680x482cq70/pizza-tanpa-keju-mozarella-foto-resep-utama.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Pizza</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://awsimages.detik.net.id/customthumb/2010/11/24/312/tipscroissantctt.jpg?w=700&q=90" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Croissant</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://asset.kompas.com/crops/xZYuZ42VenP7tIGtY0oLv3QjqPE=/0x0:1000x667/375x240/data/photo/2020/10/20/5f8e75575803c.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Kimchi</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://asset.kompas.com/crops/xZYuZ42VenP7tIGtY0oLv3QjqPE=/0x0:1000x667/375x240/data/photo/2020/10/20/5f8e75575803c.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Kimchi</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://awsimages.detik.net.id/customthumb/2010/11/24/312/tipscroissantctt.jpg?w=700&q=90" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Croissant</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://img-global.cpcdn.com/recipes/201010589ad9817e/680x482cq70/pizza-tanpa-keju-mozarella-foto-resep-utama.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Pizza</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://cdn0-production-images-kly.akamaized.net/OrdT-pJk5REpdRONTOKTgn0xOz4=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1697136/original/002803100_1504182506-amazingraze.s3.amazonaws.com1.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Rendang</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://cdn0-production-images-kly.akamaized.net/OrdT-pJk5REpdRONTOKTgn0xOz4=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1697136/original/002803100_1504182506-amazingraze.s3.amazonaws.com1.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Rendang</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://img-global.cpcdn.com/recipes/201010589ad9817e/680x482cq70/pizza-tanpa-keju-mozarella-foto-resep-utama.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Pizza</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://awsimages.detik.net.id/customthumb/2010/11/24/312/tipscroissantctt.jpg?w=700&q=90" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Croissant</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://asset.kompas.com/crops/xZYuZ42VenP7tIGtY0oLv3QjqPE=/0x0:1000x667/375x240/data/photo/2020/10/20/5f8e75575803c.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Kimchi</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://asset.kompas.com/crops/xZYuZ42VenP7tIGtY0oLv3QjqPE=/0x0:1000x667/375x240/data/photo/2020/10/20/5f8e75575803c.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Kimchi</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://awsimages.detik.net.id/customthumb/2010/11/24/312/tipscroissantctt.jpg?w=700&q=90" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Croissant</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://img-global.cpcdn.com/recipes/201010589ad9817e/680x482cq70/pizza-tanpa-keju-mozarella-foto-resep-utama.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Pizza</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-group">
+                <a href="">
+                    <div class="card border-2">
+                        <div class="image-container">
+                            <img src="https://cdn0-production-images-kly.akamaized.net/OrdT-pJk5REpdRONTOKTgn0xOz4=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1697136/original/002803100_1504182506-amazingraze.s3.amazonaws.com1.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body p-2">
+                            <p class="desc card-text mb-2">Rendang</p>
+    
+                            <div class="d-flex align-items-center gap-2">
+                                <h4 class="title mb-0">Rp 30.000</h4>
+                                <h5 class="title promo mb-0">Rp 20.000</h5>
+                            </div>
+
+                            <div class="mt-3">
+                                <a href="order.html" class="primary-button">Pesan Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>

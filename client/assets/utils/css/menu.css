@@ -1,0 +1,49 @@
+@import url(style.css);
+
+/* Style Jumbotron Section */
+
+.jumbotron .primary-button {
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron .search-icon {
+    font-size: 1.5rem;
+}
+
+
+
+/* Style Food List Section */
+
+.food-list .card-group .card {
+    border-color: var(--black-color);
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+.food-list .card-group .card .image-container {
+    height: 10rem;
+}
+
+.food-list .card-group .card .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.food-list .card-group .card .desc {
+    font-size: 1.2rem;
+    font-weight: var(--fw-medium);
+}
+
+.food-list .card-group .card .promo {
+    font-size: 0.9rem;
+    font-weight: var(--fw-regular);
+    text-decoration: line-through;
+    text-decoration-thickness: 0.1rem;
+}
+
+.food-list .card-group .card .primary-button {
+    width: 100%;
+}

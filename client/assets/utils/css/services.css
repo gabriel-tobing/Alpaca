@@ -1,0 +1,68 @@
+@import url(style.css);
+
+/* Style Info Section */
+
+.info .card {
+    position: relative;
+    height: 30rem;
+    border-color: var(--black-color);
+}
+
+.info .card.recomended {
+    background-color: var(--black-color);
+}
+
+.info .card.recomended .type {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.info .card.recomended .title,
+.info .card.recomended .desc {
+    color: var(--white-color);
+}
+
+.info .card .type {
+    width: max-content;
+    height: max-content;
+    padding: 0.3rem 0.7rem;
+    background-color: var(--secondary-color);
+    border-radius: 0.2rem;
+    color: var(--white-color);
+    font-weight: var(--fw-bold);
+    font-size: 0.9rem;
+}
+
+.info .card .title span {
+    font-size: 1rem;
+    font-weight: var(--fw-regular);
+}
+
+.info .card li .desc {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.info .card li .desc::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 2rem;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../images/static/checklist2-icon.png);
+}
+
+.info .card .thumb {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.3rem 0.5rem;
+    background-color: var(--white-color);
+    border-radius: 50%;
+}
