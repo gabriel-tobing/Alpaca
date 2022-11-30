@@ -37,6 +37,7 @@
 
 .food .country {
     position: relative;
+    user-select: none;
 }
 
 .food .country-flag {

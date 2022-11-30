@@ -5,7 +5,9 @@
 .info .card {
     position: relative;
     height: 30rem;
+    border-radius: 1rem;
     border-color: var(--black-color);
+    user-select: none;
 }
 
 .info .card.recomended {

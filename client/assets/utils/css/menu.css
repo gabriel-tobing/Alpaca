@@ -47,3 +47,8 @@
 .food-list .card-group .card .primary-button {
     width: 100%;
 }
+
+.food-list button.primary-button {
+    background-color: var(--black-color);
+    border-color: var(--black-color);
+}
