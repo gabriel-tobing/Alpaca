@@ -10,8 +10,13 @@
     border-radius: 0 0 0.4rem 0.4rem;
 }
 
+.jumbotron .list-group button {
+    background-color: var(--white-color);
+    border-color: var(--black-color);
+}
+
 .jumbotron .list-group button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--black-color);
     color: var(--white-color);
 }
 
