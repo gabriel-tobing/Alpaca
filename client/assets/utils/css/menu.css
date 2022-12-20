@@ -2,6 +2,11 @@
 
 /* Style Jumbotron Section */
 
+.jumbotron {
+    position: relative;
+    z-index: 3;
+}
+
 .jumbotron .form-control {
     border-radius: 0.4rem 0.4rem 0 0;
 }
