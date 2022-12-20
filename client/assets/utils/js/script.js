@@ -65,6 +65,8 @@ const showButton = (data) => {
     `
 }
 
+console.log(first)
+
 const searchButton = (elements) => {
     if(elements.length == 1) {
         elements[0].addEventListener("click", () => {
