@@ -36,14 +36,18 @@ window.addEventListener("scroll", () => {
 const searchMenuEl = document.getElementById("search-menu");
 
 searchMenuEl.addEventListener("keyup", () => {
-    let userValue = searchMenuEl.value;
+    const userValue = searchMenuEl.value;
 
     searchMenuEl.setAttribute("value", userValue);
+    
+    const getValue = searchMenuEl.getAttribute("value");
 
-    fetch(`http://localhost:3000/menu/cari?q=${userValue}`)
+    fetch(`http://localhost:3000/menu/cari?q=${getValue}`)
         .then(response => response.json())
         .then(response => {
             const datas = response.data;
+
+            console.log(datas)
 
             let elements = "";
 
@@ -59,37 +63,74 @@ searchMenuEl.addEventListener("keyup", () => {
         });
 });
 
+searchMenuEl.addEventListener("focus", () => {
+    const userValue = searchMenuEl.value;
+
+    searchMenuEl.setAttribute("value", userValue);
+    
+    const getValue = searchMenuEl.getAttribute("value");
+
+    fetch(`http://localhost:3000/menu/cari?q=${getValue}`)
+        .then(response => response.json())
+        .then(response => {
+            const datas = response.data;
+
+            let elements = "";
+
+            datas.forEach(data => elements += showButton(data));
+
+            const searchListEl = document.getElementById("search-list");
+
+            searchListEl.innerHTML = elements;
+
+            searchListEl.style.display = "block";
+
+            const foodSearchEl = document.querySelectorAll("#food-search");
+
+            searchButton(foodSearchEl);
+            
+        });
+});
+
 const showButton = (data) => {
     return `
         <button type="button" class="food-search list-group-item list-group-item-action" data-name="${data.name}" id="food-search">${data.name}</button>
     `
 }
 
-console.log(first)
-
 const searchButton = (elements) => {
     if(elements.length == 1) {
         elements[0].addEventListener("click", () => {
             const name = elements[0].dataset.name;
 
+            searchMenuEl.value = name;
+            searchMenuEl.setAttribute("value", name);
+
             fetch(`http://localhost:3000/menu/cari/makanan?s=${name}`)
-            .then(response => response.json())
-            .then(response => {
-                const data = response.data[0];
+                .then(response => response.json())
+                .then(response => {
+                    const data = response.data[0];
 
-                let elements = "";
+                    let elements = "";
 
-                elements += showCards(data);
+                    elements += showCards(data);
 
-                const foodListEl = document.getElementById("food-list");
+                    const foodListEl = document.getElementById("food-list");
 
-                foodListEl.innerHTML = elements;
-            });
+                    foodListEl.innerHTML = elements;
+                });
+
+            const searchListEl = document.getElementById("search-list");
+
+            searchListEl.style.display = "none";
         });
     } else {
         elements.forEach((element) => {
             element.addEventListener("click", () => {
                 const name = element.dataset.name;
+
+                searchMenuEl.value = name;
+                searchMenuEl.setAttribute("value", name);
 
                 fetch(`http://localhost:3000/menu/cari/makanan?s=${name}`)
                     .then(response => response.json())
@@ -108,8 +149,12 @@ const searchButton = (elements) => {
                             const searchListEl = document.getElementById("search-list");
 
                             searchListEl.style.display = "none";
-                        })
+                        });
                     });
+
+                const searchListEl = document.getElementById("search-list");
+
+                searchListEl.style.display = "none";
             });
         });
     }
